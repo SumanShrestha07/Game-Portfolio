@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -19,5 +20,14 @@ public class Bullet : MonoBehaviour
     {
         // Move in the direction the bullet is facing (up = forward for top-down)
         _rb.linearVelocity = transform.up * speed;
+    }
+    
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            other.GetComponent<Obstacle>().TakeDamage();
+        }
     }
 }

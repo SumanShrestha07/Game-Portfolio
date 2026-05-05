@@ -41,4 +41,10 @@ public class Player : MonoBehaviour
     {
         rb.AddForce(Vector2.right * (this.speed )); 
     }
+
+    public void AsteroidCrash()
+    {
+        // Remove health
+        Debug.Log("Crashed");
+    }
 }
