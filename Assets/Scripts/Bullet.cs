@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             other.GetComponent<Obstacle>().TakeDamage();
+            Destroy(gameObject);
         }
     }
 }
