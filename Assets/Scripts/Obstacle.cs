@@ -8,6 +8,8 @@ public class Obstacle : MonoBehaviour
 {
     [SerializeField] private GameObject obstacle;
     [SerializeField] private Slider slider;
+    
+    [SerializeField] private string title,type,description;
 
     [Header("Movement Settings")]
     [SerializeField] private float fallSpeed = 1.5f;
@@ -178,6 +180,7 @@ public class Obstacle : MonoBehaviour
 
     private void EnemyDestroyed()
     {
+        SummaryManager.Instance.ShowSummary(title,type,description);
         Destroy(obstacle);
     }
 }

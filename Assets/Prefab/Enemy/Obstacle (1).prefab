@@ -627,7 +627,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.08784, y: 3.320292}
   m_EdgeRadius: 0
 --- !u!114 &7551422808670383433
 MonoBehaviour:
@@ -641,6 +641,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc59f08e150b41746ba45bd95dadd424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  obstacle: {fileID: 4910765190330171478}
+  slider: {fileID: 2213313987666907665}
+  title: a
+  type: b
+  description: c
+  fallSpeed: 1.5
+  driftSpeed: 1.2
+  driftAmplitude: 2
+  diagonalHorizontalSpeed: 2
+  diagonalMultiplier: 5
+  curveAcceleration: 1.5
 --- !u!50 &8824601239780292998
 Rigidbody2D:
   serializedVersion: 5
@@ -656,7 +667,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
